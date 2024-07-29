@@ -26,8 +26,10 @@ int main(void)
 
 					if (p == '7' && q == '8')
 						continue;
+					{
 						putchar(',');
 						putchar(' ');
+					}
 				}
 			}
 		}

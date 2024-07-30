@@ -12,11 +12,11 @@ int main(void)
 {
 	int p, q, r;
 
-	for (p = '0'; p < '7'; p++)
+	for (p = '0'; p <= '7'; p++)
 	{
-		for (q = p + 1; q < '8'; q++)
+		for (q = p + 1; q <= '8'; q++)
 		{
-			for (r = q + 1; r < '9'; r++)
+			for (r = q + 1; r <= '9'; r++)
 			{
 				if ((p != q) != r)
 				{
@@ -24,12 +24,10 @@ int main(void)
 					putchar(q);
 					putchar(r);
 
-					if (p == '7' && q == '8')
+					if (p == '7' && q == '8' && r == '9')
 						continue;
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
@@ -37,4 +35,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-

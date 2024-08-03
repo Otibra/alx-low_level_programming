@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * void print_alphabet_x10(void) -  function that prints
- * Description: 10 times the alphabet, in lowercase
+ * print_alphabet_x10(void) - function that prints
+ *
  * Return: void
  */
 
@@ -11,6 +11,8 @@ void print_alphabet_x10(void)
 	char lower;
 	int i;
 	i = 0;
+
+
 	while (i < 10)
 	{
 		for (lower = 'a'; lower <= 'z'; lower++)
